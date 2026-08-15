@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jlK4fcCwUPw=",
+  "dgSpecHash": "ehs2ZEE99f4=",
   "success": true,
-  "projectFilePath": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj",
+  "projectFilePath": "D:\\TESIS\\ANALISIS\\APP\\BackEnd\\Service.Seguridad\\Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marvi\\.nuget\\packages\\bcrypt.net-next\\4.2.1\\bcrypt.net-next.4.2.1.nupkg.sha512",
     "C:\\Users\\marvi\\.nuget\\packages\\fluentvalidation\\11.12.0\\fluentvalidation.11.12.0.nupkg.sha512",

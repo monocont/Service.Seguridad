@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.Domain\\Service.Seguridad.Domain.csproj",
+      "projectUniqueName": "D:\\TESIS\\ANALISIS\\APP\\Backend\\Service.Seguridad\\Service.Seguridad.Domain\\Service.Seguridad.Domain.csproj",
       "projectName": "Service.Seguridad.Domain",
-      "projectPath": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.Domain\\Service.Seguridad.Domain.csproj",
+      "projectPath": "D:\\TESIS\\ANALISIS\\APP\\Backend\\Service.Seguridad\\Service.Seguridad.Domain\\Service.Seguridad.Domain.csproj",
       "packagesPath": "C:\\Users\\marvi\\.nuget\\packages\\",
-      "outputPath": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.Domain\\obj\\",
+      "outputPath": "D:\\TESIS\\ANALISIS\\APP\\Backend\\Service.Seguridad\\Service.Seguridad.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

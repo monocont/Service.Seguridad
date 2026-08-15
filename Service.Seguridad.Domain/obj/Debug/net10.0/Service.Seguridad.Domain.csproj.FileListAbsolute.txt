@@ -9,3 +9,15 @@ D:\TESIS\ANALISIS\source\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\ne
 D:\TESIS\ANALISIS\source\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\net10.0\refint\Service.Seguridad.Domain.dll
 D:\TESIS\ANALISIS\source\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\net10.0\Service.Seguridad.Domain.pdb
 D:\TESIS\ANALISIS\source\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\net10.0\ref\Service.Seguridad.Domain.dll
+D:\TESIS\ANALISIS\APP\Backend\Service.Seguridad\Service.Seguridad.Domain\bin\Debug\net10.0\Service.Seguridad.Domain.deps.json
+D:\TESIS\ANALISIS\APP\Backend\Service.Seguridad\Service.Seguridad.Domain\bin\Debug\net10.0\Service.Seguridad.Domain.dll
+D:\TESIS\ANALISIS\APP\Backend\Service.Seguridad\Service.Seguridad.Domain\bin\Debug\net10.0\Service.Seguridad.Domain.pdb
+D:\TESIS\ANALISIS\APP\Backend\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\net10.0\Service.Seguridad.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\TESIS\ANALISIS\APP\Backend\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\net10.0\Service.Seguridad.Domain.AssemblyInfoInputs.cache
+D:\TESIS\ANALISIS\APP\Backend\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\net10.0\Service.Seguridad.Domain.AssemblyInfo.cs
+D:\TESIS\ANALISIS\APP\Backend\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\net10.0\Service.Seguridad.Domain.csproj.CoreCompileInputs.cache
+D:\TESIS\ANALISIS\APP\Backend\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\net10.0\Service.Seguridad.Domain.sourcelink.json
+D:\TESIS\ANALISIS\APP\Backend\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\net10.0\Service.Seguridad.Domain.dll
+D:\TESIS\ANALISIS\APP\Backend\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\net10.0\refint\Service.Seguridad.Domain.dll
+D:\TESIS\ANALISIS\APP\Backend\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\net10.0\Service.Seguridad.Domain.pdb
+D:\TESIS\ANALISIS\APP\Backend\Service.Seguridad\Service.Seguridad.Domain\obj\Debug\net10.0\ref\Service.Seguridad.Domain.dll

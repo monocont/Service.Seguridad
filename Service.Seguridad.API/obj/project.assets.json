@@ -3207,11 +3207,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.API\\Service.Seguridad.API.csproj",
+      "projectUniqueName": "D:\\TESIS\\ANALISIS\\APP\\BackEnd\\Service.Seguridad\\Service.Seguridad.API\\Service.Seguridad.API.csproj",
       "projectName": "Service.Seguridad.API",
-      "projectPath": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.API\\Service.Seguridad.API.csproj",
+      "projectPath": "D:\\TESIS\\ANALISIS\\APP\\BackEnd\\Service.Seguridad\\Service.Seguridad.API\\Service.Seguridad.API.csproj",
       "packagesPath": "C:\\Users\\marvi\\.nuget\\packages\\",
-      "outputPath": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.API\\obj\\",
+      "outputPath": "D:\\TESIS\\ANALISIS\\APP\\BackEnd\\Service.Seguridad\\Service.Seguridad.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3233,11 +3233,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.Application\\Service.Seguridad.Application.csproj": {
-              "projectPath": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.Application\\Service.Seguridad.Application.csproj"
+            "D:\\TESIS\\ANALISIS\\APP\\BackEnd\\Service.Seguridad\\Service.Seguridad.Application\\Service.Seguridad.Application.csproj": {
+              "projectPath": "D:\\TESIS\\ANALISIS\\APP\\BackEnd\\Service.Seguridad\\Service.Seguridad.Application\\Service.Seguridad.Application.csproj"
             },
-            "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj": {
-              "projectPath": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj"
+            "D:\\TESIS\\ANALISIS\\APP\\BackEnd\\Service.Seguridad\\Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj": {
+              "projectPath": "D:\\TESIS\\ANALISIS\\APP\\BackEnd\\Service.Seguridad\\Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj"
             }
           }
         }
