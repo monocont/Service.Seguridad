@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Service.Seguridad.API/Service.Seguridad.API.csproj" />
+  <Project Path="Service.Seguridad.Application/Service.Seguridad.Application.csproj" />
+  <Project Path="Service.Seguridad.Domain/Service.Seguridad.Domain.csproj" />
+  <Project Path="Service.Seguridad.Infrastructure/Service.Seguridad.Infrastructure.csproj" />
+</Solution>

@@ -1,0 +1,282 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88425035-0BEC-57BC-C69A-8EB623E31479}|Service.Seguridad.API\\Service.Seguridad.API.csproj|d:\\tesis\\analisis\\source\\service.seguridad\\service.seguridad.api\\middleware\\responseformattingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88425035-0BEC-57BC-C69A-8EB623E31479}|Service.Seguridad.API\\Service.Seguridad.API.csproj|solutionrelative:service.seguridad.api\\middleware\\responseformattingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88425035-0BEC-57BC-C69A-8EB623E31479}|Service.Seguridad.API\\Service.Seguridad.API.csproj|d:\\tesis\\analisis\\source\\service.seguridad\\service.seguridad.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88425035-0BEC-57BC-C69A-8EB623E31479}|Service.Seguridad.API\\Service.Seguridad.API.csproj|solutionrelative:service.seguridad.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E73D3D1-6C0A-F4C2-C21C-FE267A6B273D}|Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj|d:\\tesis\\analisis\\source\\service.seguridad\\service.seguridad.infrastructure\\script\\02_crear_tablas_rol.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{2E73D3D1-6C0A-F4C2-C21C-FE267A6B273D}|Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj|solutionrelative:service.seguridad.infrastructure\\script\\02_crear_tablas_rol.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E73D3D1-6C0A-F4C2-C21C-FE267A6B273D}|Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj|d:\\tesis\\analisis\\source\\service.seguridad\\service.seguridad.infrastructure\\script\\01_query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{2E73D3D1-6C0A-F4C2-C21C-FE267A6B273D}|Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj|solutionrelative:service.seguridad.infrastructure\\script\\01_query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E73D3D1-6C0A-F4C2-C21C-FE267A6B273D}|Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj|d:\\tesis\\analisis\\source\\service.seguridad\\service.seguridad.infrastructure\\script\\02_crear_tablas_rol.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{2E73D3D1-6C0A-F4C2-C21C-FE267A6B273D}|Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj|solutionrelative:service.seguridad.infrastructure\\script\\02_crear_tablas_rol.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E73D3D1-6C0A-F4C2-C21C-FE267A6B273D}|Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj|d:\\tesis\\analisis\\source\\service.seguridad\\service.seguridad.infrastructure\\script\\01_query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{2E73D3D1-6C0A-F4C2-C21C-FE267A6B273D}|Service.Seguridad.Infrastructure\\Service.Seguridad.Infrastructure.csproj|solutionrelative:service.seguridad.infrastructure\\script\\01_query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 576,
+          "SelectedChildIndex": 48,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:168:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:167:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:166:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:160:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:166:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:164:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:163:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:150:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:151:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:152:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:153:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:154:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:155:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:156:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:157:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:158:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:159:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:160:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:161:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:150:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:159:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:162:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:163:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:161:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "02_crear_tablas_rol.sql ",
+              "DocumentMoniker": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.Infrastructure\\Script\\02_crear_tablas_rol.sql",
+              "RelativeDocumentMoniker": "Service.Seguridad.Infrastructure\\Script\\02_crear_tablas_rol.sql",
+              "ToolTip": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.Infrastructure\\Script\\02_crear_tablas_rol.sql",
+              "RelativeToolTip": "Service.Seguridad.Infrastructure\\Script\\02_crear_tablas_rol.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-06-25T16:24:15.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResponseFormattingMiddleware.cs",
+              "DocumentMoniker": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.API\\Middleware\\ResponseFormattingMiddleware.cs",
+              "RelativeDocumentMoniker": "Service.Seguridad.API\\Middleware\\ResponseFormattingMiddleware.cs",
+              "ToolTip": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.API\\Middleware\\ResponseFormattingMiddleware.cs",
+              "RelativeToolTip": "Service.Seguridad.API\\Middleware\\ResponseFormattingMiddleware.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAnwCwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T16:59:01.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Service.Seguridad.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Service.Seguridad.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwF0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T01:29:52.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "01_query.sql ",
+              "DocumentMoniker": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.Infrastructure\\Script\\01_query.sql",
+              "RelativeDocumentMoniker": "Service.Seguridad.Infrastructure\\Script\\01_query.sql",
+              "ToolTip": "D:\\TESIS\\ANALISIS\\source\\Service.Seguridad\\Service.Seguridad.Infrastructure\\Script\\01_query.sql",
+              "RelativeToolTip": "Service.Seguridad.Infrastructure\\Script\\01_query.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-06-19T17:56:54.801Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
