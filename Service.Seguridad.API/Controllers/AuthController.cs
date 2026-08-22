@@ -15,8 +15,18 @@ namespace Service.Seguridad.API.Controllers;
 public class AuthController : ControllerBase
 {
     private readonly IMediator _mediator;
+    private readonly IWebHostEnvironment _environment;
+    private readonly Application.Common.SesionOptions _sesionOptions;
 
-    public AuthController(IMediator mediator) => _mediator = mediator;
+    public AuthController(
+        IMediator mediator,
+        IWebHostEnvironment environment,
+        Microsoft.Extensions.Options.IOptions<Application.Common.SesionOptions> sesionOptions)
+    {
+        _mediator = mediator;
+        _environment = environment;
+        _sesionOptions = sesionOptions.Value;
+    }
 
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginRequest request)
@@ -172,9 +182,10 @@ public class AuthController : ControllerBase
         var cookieOptions = new CookieOptions
         {
             HttpOnly = true,
-            Secure = true,
+            // En desarrollo no hay HTTPS; Secure=true impediría guardar la cookie en localhost.
+            Secure = !_environment.IsDevelopment(),
             SameSite = SameSiteMode.Strict,
-            Expires = DateTime.UtcNow.AddDays(7)
+            Expires = DateTime.UtcNow.Add(_sesionOptions.RefreshTokenDuracion)
         };
 
         Response.Cookies.Append("refreshToken", refreshToken, cookieOptions);

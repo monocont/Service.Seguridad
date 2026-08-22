@@ -1,4 +1,6 @@
 using MediatR;
+using Microsoft.Extensions.Options;
+using Service.Seguridad.Application.Common;
 using Service.Seguridad.Application.DTOs.Auth;
 using Service.Seguridad.Application.Interfaces;
 using Service.Seguridad.Domain.Entities;
@@ -12,19 +14,22 @@ public class LoginLocalCommandHandler : IRequestHandler<LoginLocalCommand, AuthR
     private readonly ITokenService _tokenService;
     private readonly IUsuarioRolRepository _usuarioRolRepository;
     private readonly IRolRepository _rolRepository;
+    private readonly SesionOptions _sesionOptions;
 
     public LoginLocalCommandHandler(
         IUsuarioRepository usuarioRepository,
         ISesionRepository sesionRepository,
         ITokenService tokenService,
         IUsuarioRolRepository usuarioRolRepository,
-        IRolRepository rolRepository)
+        IRolRepository rolRepository,
+        IOptions<SesionOptions> sesionOptions)
     {
         _usuarioRepository = usuarioRepository;
         _sesionRepository = sesionRepository;
         _tokenService = tokenService;
         _usuarioRolRepository = usuarioRolRepository;
         _rolRepository = rolRepository;
+        _sesionOptions = sesionOptions.Value;
     }
 
     public async Task<AuthResponse> Handle(LoginLocalCommand request, CancellationToken cancellationToken)
@@ -49,7 +54,7 @@ public class LoginLocalCommandHandler : IRequestHandler<LoginLocalCommand, AuthR
         var sesion = TokenRefresco.Crear(
             usuario.IdUsuario,
             refreshTokenStr,
-            TimeSpan.FromDays(7),
+            _sesionOptions.RefreshTokenDuracion,
             request.IpOrigen,
             request.AgenteUsuario);
 

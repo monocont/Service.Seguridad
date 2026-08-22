@@ -1,4 +1,6 @@
 using MediatR;
+using Microsoft.Extensions.Options;
+using Service.Seguridad.Application.Common;
 using Service.Seguridad.Application.DTOs.Auth;
 using Service.Seguridad.Application.Interfaces;
 using Service.Seguridad.Domain.Entities;
@@ -13,18 +15,22 @@ public class LoginFederadoCommandHandler : IRequestHandler<LoginFederadoCommand,
     private readonly IGoogleAuthService _googleAuthService;
     private readonly IUsuarioRolRepository _usuarioRolRepository;
 
+    private readonly SesionOptions _sesionOptions;
+
     public LoginFederadoCommandHandler(
         IUsuarioRepository usuarioRepository,
         ISesionRepository sesionRepository,
         ITokenService tokenService,
         IGoogleAuthService googleAuthService,
-        IUsuarioRolRepository usuarioRolRepository)
+        IUsuarioRolRepository usuarioRolRepository,
+        IOptions<SesionOptions> sesionOptions)
     {
         _usuarioRepository = usuarioRepository;
         _sesionRepository = sesionRepository;
         _tokenService = tokenService;
         _googleAuthService = googleAuthService;
         _usuarioRolRepository = usuarioRolRepository;
+        _sesionOptions = sesionOptions.Value;
     }
 
     public async Task<AuthResponse> Handle(LoginFederadoCommand request, CancellationToken cancellationToken)
@@ -54,7 +60,7 @@ public class LoginFederadoCommandHandler : IRequestHandler<LoginFederadoCommand,
         var sesion = TokenRefresco.Crear(
             usuario.IdUsuario,
             refreshTokenStr,
-            TimeSpan.FromDays(7),
+            _sesionOptions.RefreshTokenDuracion,
             request.IpOrigen,
             request.AgenteUsuario);
 

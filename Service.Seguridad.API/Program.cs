@@ -46,6 +46,9 @@ builder.Services.AddMediatR(cfg =>
 
 builder.Services.AddValidatorsFromAssembly(typeof(Service.Seguridad.Application.Commands.Auth.LoginLocal.LoginLocalCommand).Assembly);
 
+builder.Services.Configure<Service.Seguridad.Application.Common.SesionOptions>(
+    builder.Configuration.GetSection(Service.Seguridad.Application.Common.SesionOptions.SectionName));
+
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<ISesionRepository, SesionRepository>();
 builder.Services.AddScoped<ITokenService, TokenService>();

@@ -53,6 +53,8 @@ public class SecurityDbContext : Microsoft.EntityFrameworkCore.DbContext
             entity.Property(e => e.FechaCreacion).HasColumnName("fecha_creacion").IsRequired();
             entity.Property(e => e.FechaExpiracion).HasColumnName("fecha_expiracion").IsRequired();
             entity.Property(e => e.EsRevocado).HasColumnName("es_revocado").IsRequired();
+            entity.Property(e => e.FechaRevocacion).HasColumnName("fecha_revocacion");
+            entity.Property(e => e.FechaInicioSesion).HasColumnName("fecha_inicio_sesion").IsRequired();
             entity.Property(e => e.IpOrigen).HasColumnName("ip_origen").HasMaxLength(45);
             entity.Property(e => e.AgenteUsuario).HasColumnName("agente_usuario").HasMaxLength(255);
             entity.Property(e => e.CreadoPor).HasColumnName("creado_por").HasMaxLength(150);

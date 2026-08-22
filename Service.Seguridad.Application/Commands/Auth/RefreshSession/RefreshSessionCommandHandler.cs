@@ -1,4 +1,6 @@
 using MediatR;
+using Microsoft.Extensions.Options;
+using Service.Seguridad.Application.Common;
 using Service.Seguridad.Application.DTOs.Auth;
 using Service.Seguridad.Application.Interfaces;
 using Service.Seguridad.Domain.Entities;
@@ -11,17 +13,20 @@ public class RefreshSessionCommandHandler : IRequestHandler<RefreshSessionComman
     private readonly ITokenService _tokenService;
     private readonly IUsuarioRepository _usuarioRepository;
     private readonly IUsuarioRolRepository _usuarioRolRepository;
+    private readonly SesionOptions _sesionOptions;
 
     public RefreshSessionCommandHandler(
         ISesionRepository sesionRepository,
         ITokenService tokenService,
         IUsuarioRepository usuarioRepository,
-        IUsuarioRolRepository usuarioRolRepository)
+        IUsuarioRolRepository usuarioRolRepository,
+        IOptions<SesionOptions> sesionOptions)
     {
         _sesionRepository = sesionRepository;
         _tokenService = tokenService;
         _usuarioRepository = usuarioRepository;
         _usuarioRolRepository = usuarioRolRepository;
+        _sesionOptions = sesionOptions.Value;
     }
 
     public async Task<AuthResponse> Handle(RefreshSessionCommand request, CancellationToken cancellationToken)
@@ -33,12 +38,28 @@ public class RefreshSessionCommandHandler : IRequestHandler<RefreshSessionComman
 
         if (sesionExistente.EsRevocado)
         {
-            await _sesionRepository.RevocarTodasPorUsuarioAsync(sesionExistente.IdUsuario);
-            throw new UnauthorizedAccessException("Intento de reutilizaciÃ³n detectado. Sesiones revocadas.");
+            // Margen de gracia: refreshes casi simultáneos (varias peticiones 401 en paralelo)
+            // llegan con el token recién rotado. Dentro de la ventana se trata como refresh válido;
+            // fuera de ella es reutilización real y se revocan todas las sesiones del usuario.
+            var enVentanaGracia = sesionExistente.FechaRevocacion.HasValue &&
+                DateTime.UtcNow <= sesionExistente.FechaRevocacion.Value.AddSeconds(30);
+
+            if (!enVentanaGracia)
+            {
+                await _sesionRepository.RevocarTodasPorUsuarioAsync(sesionExistente.IdUsuario);
+                throw new UnauthorizedAccessException("Intento de reutilizaciÃ³n detectado. Sesiones revocadas.");
+            }
         }
 
         if (sesionExistente.EstaExpirado())
             throw new UnauthorizedAccessException("Token de refresco expirado.");
+
+        // Límite absoluto: sin importar la actividad, la sesión continua no puede superar el máximo configurado.
+        if (sesionExistente.ExcedioLimiteAbsoluto(_sesionOptions.LimiteAbsolutoDuracion))
+        {
+            await _sesionRepository.RevocarTodasPorUsuarioAsync(sesionExistente.IdUsuario);
+            throw new UnauthorizedAccessException("SesiÃ³n excediÃ³ el tiempo mÃ¡ximo permitido. Inicie sesiÃ³n nuevamente.");
+        }
 
         sesionExistente.Revocar();
         await _sesionRepository.ActualizarAsync(sesionExistente);
@@ -57,9 +78,11 @@ public class RefreshSessionCommandHandler : IRequestHandler<RefreshSessionComman
         var nuevaSesion = TokenRefresco.Crear(
             usuario.IdUsuario,
             nuevoRefreshToken,
-            TimeSpan.FromDays(7),
+            _sesionOptions.RefreshTokenDuracion,
             null,
-            null);
+            null,
+            // La sesión rotada hereda el inicio original para que el límite absoluto se mida desde el login.
+            sesionExistente.FechaInicioSesion);
 
         await _sesionRepository.AgregarAsync(nuevaSesion);
 

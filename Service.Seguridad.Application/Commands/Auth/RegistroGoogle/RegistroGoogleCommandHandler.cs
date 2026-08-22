@@ -1,4 +1,6 @@
 using MediatR;
+using Microsoft.Extensions.Options;
+using Service.Seguridad.Application.Common;
 using Service.Seguridad.Application.DTOs.Auth;
 using Service.Seguridad.Application.Interfaces;
 using Service.Seguridad.Domain.Entities;
@@ -15,13 +17,16 @@ public class RegistroGoogleCommandHandler : IRequestHandler<RegistroGoogleComman
     private readonly IUsuarioRolRepository _usuarioRolRepository;
     private readonly IRolRepository _rolRepository;
 
+    private readonly SesionOptions _sesionOptions;
+
     public RegistroGoogleCommandHandler(
         IUsuarioRepository usuarioRepository,
         ISesionRepository sesionRepository,
         ITokenService tokenService,
         IGoogleAuthService googleAuthService,
         IUsuarioRolRepository usuarioRolRepository,
-        IRolRepository rolRepository)
+        IRolRepository rolRepository,
+        IOptions<SesionOptions> sesionOptions)
     {
         _usuarioRepository = usuarioRepository;
         _sesionRepository = sesionRepository;
@@ -29,6 +34,7 @@ public class RegistroGoogleCommandHandler : IRequestHandler<RegistroGoogleComman
         _googleAuthService = googleAuthService;
         _usuarioRolRepository = usuarioRolRepository;
         _rolRepository = rolRepository;
+        _sesionOptions = sesionOptions.Value;
     }
 
     public async Task<AuthResponse> Handle(RegistroGoogleCommand request, CancellationToken cancellationToken)
@@ -70,7 +76,7 @@ public class RegistroGoogleCommandHandler : IRequestHandler<RegistroGoogleComman
         var sesion = TokenRefresco.Crear(
             usuarioNuevo.IdUsuario,
             refreshTokenStr,
-            TimeSpan.FromDays(7),
+            _sesionOptions.RefreshTokenDuracion,
             request.IpOrigen,
             request.AgenteUsuario);
 
