@@ -42,6 +42,8 @@ CREATE TABLE seguridad.token_refresco (
     fecha_creacion     TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
     fecha_expiracion   TIMESTAMP      NOT NULL,
     es_revocado        BOOLEAN        NOT NULL DEFAULT FALSE,
+    fecha_revocacion   TIMESTAMP      NULL,               -- momento de revocacion (margen de gracia anti-refresh paralelos)
+    fecha_inicio_sesion TIMESTAMP     NULL,               -- inicio de la sesion original (limite absoluto de sesion)
     ip_origen          VARCHAR(45)    NULL,
     agente_usuario     VARCHAR(255)   NULL,
     creado_por         VARCHAR(150)   NULL,
